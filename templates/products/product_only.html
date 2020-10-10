@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+
+{% block menu %}
+    {% include 'navbar.html' %}
+{% endblock %}
+{% block content %}
+    <div class="container_product">
+        <div class="container">
+            <div class="row home_products">
+                <div class="col-md-6 container_products_img">
+                    <div class="pictures_product"></div>
+                </div>
+                <div class="col-md-6 characteristic_product">
+                    <div class="title_name_product">Name's products</div><br>
+                    <div>
+                        <select class="custom-select custom-select-lg mb-3">
+                            <option selected>Dimension</option>
+                            <option value="1">20X20X20</option>
+                            <option value="2">20X20X20</option>
+                            <option value="3">20X20X20</option>
+                          </select>
+                    </div>
+
+                    <div class="checkbox">
+                        <div class="title_color">Tube colors</div><br>
+                        <form action="">
+                            <select class="custom-select custom-select-lg mb-3">
+                                <option selected>Tube colors</option>
+                                <option value="1">Red</option>
+                                <option value="2">Yellow</option>
+                                <option value="3">Blue</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="title_color">Coating</div><br>
+                    <form action="">
+                        <select class="custom-select custom-select-lg mb-3">
+                            <option selected>Coating</option>
+                            <option value="1">Glass</option>
+                            <option value="2">Wood</option>
+                            <option value="3">Marble</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="title_color">Elbow color</div><br>
+                    <form action="">
+                        <select class="custom-select custom-select-lg mb-3">
+                            <option selected>Elbow color</option>
+                            <option value="1">Red</option>
+                            <option value="2">Yellow</option>
+                            <option value="3">Blue</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="title_color">Quantities</div><br>
+                    <form action="">
+                        <select class="custom-select custom-select-lg mb-3">
+                            <option selected>Quantitities</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="col-md-12 button_cart"><button>Add to cart</button></div>
+                
+                <div class="subtitle_products">Payement</div>
+                <div class="col-md-12 bar_products_only"></div>
+
+
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group row">
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputPassword" placeholder="Name">
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="inputPassword" placeholder="First name">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Address">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Tva (optional)">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="inputPassword" placeholder="Mobile phone">
+                            </div>
+                        </div>
+
+
+                      </form>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="title_color">Payement method</div><br>
+                    <div class="payement_method">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">Cash</label>
+                        </div>
+                          
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Transfer</label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">Card</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 bar_products_only"></div>
+
+                <div class="col-md-12 button_buy">
+                    <button>Validate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

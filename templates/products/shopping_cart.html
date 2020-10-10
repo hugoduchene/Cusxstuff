@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block menu %}
+    {% include 'navbar.html' %}
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="container_cart">
+            
+            <div class="row">
+                <div class="title_cart col-md-12">Name's product</div>
+
+                <div class="characteristic_product_cart row">
+                    <div class="col-10">
+                        <ul>
+                            <li>Dimension : 20x20X20</li>
+                            <li>Tube colors : red</li>
+                            <li>Elbow color :  yellow</li>
+                            <li>Price : 250€</li>
+                            <li>Qte : 1</li>
+                        </ul>
+                    </div>
+                    
+
+                    <div class="col-2 trash_cart">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="title_cart col-md-12">Name's product</div>
+
+                <div class="characteristic_product_cart row">
+                    <div class="col-10">
+                        <ul>
+                            <li>Dimension : 20x20X20</li>
+                            <li>Tube colors : red</li>
+                            <li>Elbow color :  yellow</li>
+                            <li>Price : 250€</li>
+                            <li>Qte : 1</li>
+                        </ul>
+                    </div>
+                    
+
+                    <div class="col-2 trash_cart">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    
+                </div>
+
+                <span class="total_cart row container">
+                    <div class="col-8">Total :</div>
+                    <div class="col-4 value_tot">500€</div>
+                </span>
+            </div>
+        
+        </div>
+
+
+        <div class="row">
+            <div class="subtitle_products">Payement</div>
+                <div class="col-md-12 bar_products_only"></div>
+
+
+                <div class="col-md-6">
+                    <form class="">
+                        <div class="form-group row">
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputPassword" placeholder="Name">
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control" id="inputPassword" placeholder="First name">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Address">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPassword" placeholder="Tva (optional)">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="inputPassword" placeholder="Mobile phone">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="title_color">Payement method</div><br>
+                    <div class="payement_method">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">Cash</label>
+                        </div>
+                          
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Transfer</label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">Card</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 bar_products_only"></div>
+
+                <div class="col-md-12 button_buy">
+                    <button>Validate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

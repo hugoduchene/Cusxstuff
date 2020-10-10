@@ -1,0 +1,41 @@
+{% load static %}
+<script src="{% static 'js/navbar.js' %}" defer></script>
+<div class="navbar">
+    <div class="container">
+        <a href="/o/home/" class="navbar-brand logo_nav">Marc-Antoine Crickx</a>
+        
+        <div class="nav-item high_screen">
+            <a href="/o/home/" class="elt_navbar">Home</a>
+            <span>-</span>
+            <a href="/products/" class="elt_navbar">Products</a>
+            <span>-</span>
+            <a href="" class="elt_navbar">About</a>
+            <span>-</span>
+            <a href="" class="elt_navbar">Contact</a>
+            <span>-</span>
+            <a href="/products/shoppingcart/" class="elt_navbar"><i class="fas fa-shopping-cart"></i></a>
+            <span>-</span>
+            <a href="" class="elt_navbar"><img src="{% static 'img/assets/uk.svg' %}" class="flag_en" alt=""></a>
+            <span>-</span>
+            <a href="" class="elt_navbar"><img src="{% static 'img/assets/france.svg' %}" class="flag_fr" alt=""></a>
+        </div>
+
+        <div class="low_screen nav-item">
+            <div class="elt_navbar bar"><i class="fas fa-bars"></i></div>
+        </div>
+
+        <div class="navbar_mobile">
+            <div class="container_navbar_mobile">
+                <a href="/o/home/" class="">Home</a>
+                <a href="/products/" class="">Products</a>
+                <a href="" class="">About</a>
+                <a href="" class="">Contact</a>
+                <a href="" class=""><i class="fas fa-shopping-cart"></i></a>
+                <a href="" class=""><img src="{% static 'img/assets/uk.svg' %}" class="flag_en" alt=""></a>
+                <a href="" class=""><img src="{% static 'img/assets/france.svg' %}" class="flag_fr" alt=""></a>
+                <div class="cross"><i class="fas fa-times"></i></div>
+            </div>
+        </div>
+    
+    </div>
+</div>

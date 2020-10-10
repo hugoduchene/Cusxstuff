@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block menu %}
+    {% include 'navbar.html' %}
+{% endblock %}
+{% block content %}
+{% load static %}
+<div class="container">
+    <div class="container_success">
+        <div class="pic_success"><img src="{% static 'img/assets/logo.png' %}" alt=""></div>
+        <div class="text_success">
+            <h1>SUCCESS</h1>
+            <p>Congratulations your order is waiting for delivery, you will receive an email when your order is ready.</p>
+        </div>
+    </div>
+</div>
+
+{% include 'animation_objects.html' %}
+{% endblock %}

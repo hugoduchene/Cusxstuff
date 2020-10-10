@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% include "header.html" %}
+<body class="body">
+    <section class="menu">{%block menu %}{% endblock %}</section>
+    <section class="main_container">
+      {% block content %}{% endblock %}
+    </section>
+    <section>{% include "footer.html" %}</section>
+  </body>
+</html>

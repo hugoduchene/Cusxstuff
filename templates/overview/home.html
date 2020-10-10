@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block menu %}
+    {% include 'navbar.html' %}
+{% endblock %}
+{% block content %}
+{% load static %}
+    {% include 'animation_objects.html' %}
+    <div class="box_home">
+        <div class="container container_elt_home">
+            <div class="logo_home">
+                <img src="{% static 'img/assets/logo_test.png' %}" alt="">
+            </div>
+            <div class="sub_logo_home">
+                <a class="elt_home">Tables</a>
+                 - 
+                <a class="elt_home">Chairs</a>
+                 - 
+                <a class="elt_home">Lamps</a>
+                 - 
+                <a class="elt_home">Sculptures</a>
+                 - 
+                <a class="elt_home">Art Gallery</a>
+        </div>
+    </div>
+{% endblock %}
