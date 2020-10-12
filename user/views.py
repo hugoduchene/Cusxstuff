@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.views import LoginView
 from django.views.generic.base import View
 from django.contrib.auth import authenticate, login
@@ -37,6 +37,4 @@ class RegistrationView(View):
             )
             login(request, user)
 
-        return render(request, "user/registration.html", context={
-            'form': RegistrationForm,
-        })
+        return redirect('home')

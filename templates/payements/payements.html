@@ -1,0 +1,70 @@
+{% load static %}
+
+<script src="{% static 'js/payements.js' %}" type="module" defer></script>
+
+<div class="row">
+    <div class="subtitle_products">Payement</div>
+        <div class="col-md-12 bar_products_only"></div>
+
+
+        <div class="col-md-6">
+            <form class="">
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputFisrtName" placeholder="First name">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputTva" placeholder="Tva (optional)">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputMobile" placeholder="Mobile phone">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <div class="title_color">Payement method</div><br>
+            <form class="payement_method" id="form_method_payement">
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="cash">
+                    <label class="custom-control-label" for="customRadio1">Cash</label>
+                </div>
+                  
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="Transfer">
+                    <label class="custom-control-label" for="customRadio2">Transfer</label>
+                </div>
+
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="Card">
+                    <label class="custom-control-label" for="customRadio3">Card</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-12 bar_products_only"></div>
+
+        <div class="col-md-12 button_buy">
+            <button id="button_validate">Validate</button>
+        </div>
+    </div>
+</div>

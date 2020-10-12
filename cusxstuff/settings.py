@@ -12,6 +12,13 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
+
+STRIPE_KEY = env('STRIPE_KEY')
+YOUR_DOMAIN = 'http://localhost:8000'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,10 +46,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'rest_framework',
+
     'user',
     'overview',
     'products',
     'payements',
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -134,6 +144,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
-# login config 
+# login config
 
 LOGIN_REDIRECT_URL = 'home'

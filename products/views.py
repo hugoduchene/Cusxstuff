@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic.base import View
 
 # Create your views here.
@@ -8,7 +8,10 @@ from django.views.generic.base import View
 
 class ShoppingCart(View):
     def get(self, request, *args, **kwargs):
-        return render(request, 'products/shopping_cart.html')
+        if request.user.is_authenticated:
+            return render(request, 'products/shopping_cart.html')
+        else:
+            return redirect('registrer')
 
 
 """ Prodcut home """
